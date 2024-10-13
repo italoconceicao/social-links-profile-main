@@ -26,9 +26,10 @@ main {
     justify-content: center;
 }
 
+figure{ margin: auto}
 #profile-picture {
     margin: auto;
-    height: 1   2vh;
+    height: 12vh;
     width: 12vh;
     border-radius: 50%;
 }
