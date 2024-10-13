@@ -54,7 +54,7 @@ h3 {
     font-size: 14px;
     font-weight: 600;
 }
-.button {
+#links-card a {
     transition: all 0.3s;
     cursor: pointer;
     display: flex;
@@ -67,8 +67,9 @@ h3 {
     /* text-align: center; */
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
+    text-decoration: none;
 }
-.button:hover {
+#links-card a:hover {
     color: hsl(0, 0%, 20%);
     background-color: hsl(75, 94%, 57%);
 }
