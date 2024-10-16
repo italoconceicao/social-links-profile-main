@@ -1,13 +1,19 @@
+* {
+    padding: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: hsl(0, 0%, 8%);
 }
+
 main {
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #container {
     display: flex;
     flex-direction: column;
@@ -21,32 +27,38 @@ main {
     height: 50%;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-around;
-    justify-content: center;
+    text-align: center;
 }
 
-figure{ margin: auto}
+figure {
+    margin-top: 5vh;
+}
+
 #profile-picture {
     margin: auto;
     height: 12vh;
     width: 12vh;
     border-radius: 50%;
 }
+
 h2 {
     color: hsl(0, 0%, 100%);
 }
+
 h4 {
     font-size: 14px;
     color: hsl(75, 94%, 57%);
 }
+
 h3 {
+    /* margin: 0; */
     font-size: 14px;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
 }
 
-#links-card{
+#links-card {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -54,22 +66,36 @@ h3 {
     justify-content: center;
     font-size: 14px;
     font-weight: 600;
+    list-style: none;
+
 }
-#links-card a {
-    transition: all 0.3s;
+
+#links-card li {
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
     height: 6vh;
     width: 90%;
     margin: 0.7vh;
-    /* text-align: center; */
-    color: hsl(0, 0%, 100%);
-    border-radius: 5px;
+    display: flex;
+}
+
+#links-card a {
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
 }
+
+#links-card a:visited {
+    color: hsl(0, 0%, 100%);
+}
+
+
 #links-card a:hover {
     color: hsl(0, 0%, 20%);
     background-color: hsl(75, 94%, 57%);
@@ -83,6 +109,7 @@ footer {
     color: hsl(0, 0%, 100%);
     height: 10vh;
 }
-footer a{
-    color:rgb(157, 51, 255)
+
+footer a {
+    color: rgb(157, 51, 255)
 }
